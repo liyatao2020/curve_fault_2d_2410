@@ -1,0 +1,20 @@
+// -*- C++ -*- (tell Emacs to use C++ mode for syntax highlighting)
+//
+// This spatial database specifies the initial stresses for the model
+// The stresses increase linearly with depth.
+//
+#SPATIAL.ascii 1
+SimpleDB {
+  num-values = 3
+  value-names =  stress-xx stress-yy stress-xy
+  value-units =  MPa MPa MPa
+  num-locs = 2
+  data-dim = 1
+  space-dim = 2
+  cs-data = cartesian {
+    to-meters = 1.0
+    space-dim = 2
+  }
+}
+0   1000  0    0    0 
+0   0    -28   -24    0
